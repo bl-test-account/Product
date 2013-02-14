@@ -1,32 +1,29 @@
-.image {
-  height: 100px;
-  float: left;
+.deal-container {
+  width:33%;
+  height:200px;
+  display:inline-block;
+  margin-bottom:20px;
 }
 
 .title {
-  height:50px;
-  font-size:20px;
+  width:100%;
+  height:40px;
+  font-size:15px;
+  text-align:center;
   overflow:hidden;
-  text-align:right;
 }
 
-.price {
-  height:50px;
+.deal {
+  width:100%;
+  height:20px;
   font-size:20px;
+  text-align:center;
   color:green;
-  text-align:right;
 }
 
-.promo {
-  margin-top:10px;
-  font-size:20px;
-  color:green;
-  text-align:justify;
-}
-
-.description {
-  clear:both;
-  margin-top:10px;
-  margin-bottom:10px;
-  text-align:justify;
+.image {
+  height:140px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
 }
