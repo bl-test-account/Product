@@ -36,3 +36,25 @@
   text-align:justify;
   font-size:20px;
 }
+
+@media only screen and (max-width:500px) {
+  .image {
+    height:100px;
+  }
+  
+  .title {
+    font-size:20px;
+  }
+  
+  .price {
+    font-size:19px;
+  }
+  
+  .promo {
+    font-size: 30px;
+  }
+  
+  .description {
+    font-size:15px;
+  }
+}
