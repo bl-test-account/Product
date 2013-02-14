@@ -17,6 +17,10 @@
   text-align:right;
 }
 
+.promo {
+  height:100px;
+}
+
 .description {
   clear:both;
   margin-top:10px;
@@ -25,4 +29,8 @@
 
 .outer-container {
   margin-top:8px;
+}
+
+.disabled-button {
+  background:rgb(100, 100, 100);
 }
