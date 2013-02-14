@@ -2,7 +2,6 @@ var clearData = function() {
   $('.image').addClass('invisible');
   $('.title').text('');
   $('.price').text('');
-  $('.description').text('');
   $('.message').text('');
 }
 
@@ -24,7 +23,6 @@ var scanned = function(data) {
     $('.image').attr('src', data.item.product.images[0].link);
     $('.title').text(data.item.product.title);
     $('.price').text('$' + data.item.product.inventories[0].price.toMoney());
-    $('.description').text(data.item.product.description);
     $('.message').text('');
     $('#submit').removeClass('disabled-button');
   }
