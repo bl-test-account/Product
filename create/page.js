@@ -45,4 +45,8 @@ $(function() {
       scanned(data);
     })
   });
+  
+  $('#submit').click(function(){
+    ;
+  });
 })

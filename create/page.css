@@ -4,14 +4,14 @@
 }
 
 .title {
-  height:50px;
+  height:70px;
   font-size:20px;
   overflow:hidden;
   text-align:right;
 }
 
 .price {
-  height:50px;
+  height:30px;
   font-size:20px;
   color:green;
   text-align:right;
