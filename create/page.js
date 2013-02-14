@@ -6,8 +6,7 @@ var clearData = function() {
   $('.message').text('');
 }
 
-Number.prototype.toMoney = function(decimals, decimal_sep, thousands_sep)
-{ 
+Number.prototype.toMoney = function(decimals, decimal_sep, thousands_sep) { 
   var n = this,
   c = isNaN(decimals) ? 2 : Math.abs(decimals), //if decimal is zero we must take it, it means user does not want to show any decimal
   d = decimal_sep || '.', //if no decimal separator is passed we use the dot as default decimal separator (we MUST use a decimal separator) 
@@ -19,18 +18,20 @@ Number.prototype.toMoney = function(decimals, decimal_sep, thousands_sep)
 }
 
 var scanned = function(data) {
-    if(data.found){
-      $('.image').removeClass('invisible');
-      $('.image').attr('src', data.item.product.images[0].link);
-      $('.title').text(data.item.product.title);
-      $('.price').text('$' + data.item.product.inventories[0].price.toMoney());
-      $('.description').text(data.item.product.description);
-      $('.message').text('');
-      $('#submit').removeClass('disabled-button');
-    }
-    else{
-      $('.message').text('Product not found');
-    }
+  if(data.found){
+    window.productData = data.item.product;
+    $('.image').removeClass('invisible');
+    $('.image').attr('src', data.item.product.images[0].link);
+    $('.title').text(data.item.product.title);
+    $('.price').text('$' + data.item.product.inventories[0].price.toMoney());
+    $('.description').text(data.item.product.description);
+    $('.message').text('');
+    $('#submit').removeClass('disabled-button');
+  }
+  else{
+    window.productData = null;
+    $('.message').text('Product not found');
+  }
 }
 
 $(function() {
@@ -47,6 +48,8 @@ $(function() {
   });
   
   $('#submit').click(function(){
-    ;
+    if($('#submit').hasClass('disabled-button')) return;
+    
+    BL.createContent(JSON.stringify({product: window.productData, promo: $('.promo').val()}));
   });
 })
