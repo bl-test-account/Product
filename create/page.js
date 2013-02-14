@@ -1,11 +1,10 @@
 $(function() {
   BL.scanProduct(function(data){
-    if(data.name.length > 0){
-      $('#name > strong').text(data.name);
-      $('#image').attr('src', data.image);
-      $('#price').text('$' + data.price);
-      $('#buy').text('View at walmart.com');
-      $('#buy').attr('href', data.url);
+    if(data.found){
+      $('.image').attr('src', data.item.product.images[0].link);
+      $('.title').text(data.item.product.title);
+      $('.price').text('$' + data.item.product.inventories[0].price);
+      $('.description').text(data.item.product.description);
     }
     else{
       $('#name > strong').text("Product not found at walmart.com");

@@ -1,0 +1,28 @@
+.image {
+  height: 100px;
+  float: left;
+}
+
+.title {
+  height:50px;
+  font-size:20px;
+  overflow:hidden;
+  text-align:right;
+}
+
+.price {
+  height:50px;
+  font-size:20px;
+  color:green;
+  text-align:right;
+}
+
+.description {
+  clear:both;
+  margin-top:10px;
+  text-align:justify;
+}
+
+.outer-container {
+  margin-top:8px;
+}
