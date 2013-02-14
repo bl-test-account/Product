@@ -17,5 +17,7 @@ $(function() {
   $('.price').text('$' + data.product.inventories[0].price.toMoney());
   $('.description').text(data.product.description);
   $('.promo').text(data.promo)
+  $('#link').attr('href', data.product.link);
+  
   BL.previewReady(); // this is what tells the preview page to display this component - must be called
 })
