@@ -1,5 +1,5 @@
 .image {
-  height: 100px;
+  height: 200px;
   float: left;
 }
 
@@ -28,7 +28,7 @@
 
 .description {
   clear:both;
-  margin-top:10px;
-  margin-bottom:10px;
+  padding-top:10px;
+  padding-bottom:10px;
   text-align:justify;
 }
