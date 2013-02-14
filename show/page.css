@@ -4,7 +4,7 @@
 }
 
 .title {
-  font-size:23px;
+  font-size:27px;
   overflow:hidden;
   text-align:right;
 }
@@ -16,7 +16,7 @@
 }
 
 .price {
-  font-size:22px;
+  font-size:25px;
   color:green;
   text-align:right;
 }
