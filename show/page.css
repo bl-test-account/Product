@@ -4,20 +4,18 @@
 }
 
 .title {
-  height:50px;
-  font-size:20px;
+  font-size:25px;
   overflow:hidden;
   text-align:right;
 }
 
 .bottom-container {
-  padding-left:30px;
-  padding-right:30px;
+  padding-left:4%;
+  padding-right:4%;
 }
 
 .price {
-  height:50px;
-  font-size:20px;
+  font-size:22px;
   color:green;
   text-align:right;
 }
@@ -32,7 +30,8 @@
 
 .description {
   clear:both;
-  padding-top:10px;
+  padding-top:20px;
   padding-bottom:10px;
   text-align:justify;
+  font-size:20px;
 }
