@@ -7,7 +7,7 @@
 
 .title {
   width:100%;
-  height:40px;
+  height:50px;
   font-size:15px;
   text-align:center;
   overflow:hidden;
@@ -15,14 +15,14 @@
 
 .deal {
   width:100%;
-  height:20px;
+  height:30px;
   font-size:20px;
   text-align:center;
   color:green;
 }
 
 .image {
-  height:140px;
+  height:120px;
   margin-left:auto;
   margin-right:auto;
   display:block;
